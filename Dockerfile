@@ -30,7 +30,7 @@ WORKDIR /app
 COPY --from=builder /app ./
 
 ENV NODE_ENV=production
-EXPOSE 3000
+EXPOSE 3000 
 
 # TODO(step-4f): add a HEALTHCHECK that probes http://localhost:3000/health.
 #   IMPORTANT: `node:20.11-slim` does NOT ship with curl or wget.
